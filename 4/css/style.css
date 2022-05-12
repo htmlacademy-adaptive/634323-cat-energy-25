@@ -17,6 +17,7 @@
   width: 320px;
 }
 .main-header {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -37,16 +38,28 @@
   align-items: center;
   width: 190px;
 }
-.main-nav {
+.main-header__toggle-wrapper {
   display: flex;
   align-items: center;
 }
-.main-nav__toggle {
+.main-header__toggle-nav {
   border: none;
   background-color: #ffffff;
   margin: 0;
   padding: 0;
   cursor: pointer;
+}
+.main-nav {
+  display: none;
+  position: absolute;
+  bottom: -203px;
+  z-index: 10;
+  padding: 0;
+  margin: 0;
+  background-color: #ffffff;
+  width: 100%;
+  left: 0;
+  border-top: 1px solid #d9d9d9;
 }
 .main-container {
   display: flex;
@@ -792,5 +805,29 @@
   background-image: url("../img/rectangle-gift.png"), url("../img/gift-image.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
+}
+.site-list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.site-list__item {
+  padding-top: 22px;
+  padding-bottom: 22px;
+  align-items: stretch;
+  text-align: center;
+  border-bottom: 1px solid #d9d9d9;
+}
+.site-list__link {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */
