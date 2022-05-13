@@ -1,0 +1,42 @@
+@image-product: url("../img/index-can-mobile.png");
+@image-color: url("../img/Rectangle.png");
+@image: url("../img/index-background-desktop.jpg");
+
+
+.welcom-promo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 320px;
+  min-height: 353px;
+  background-color: #ffffff;
+  background-image: @image-product, @image-color, @image;
+  background-repeat: no-repeat;
+  background-position: center 167px, top center, top center;
+  padding-top: 127px;
+  padding-bottom: 20px;
+}
+
+.welcom-promo__slogan {
+  margin: 0;
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #ffffff;
+  text-transform: uppercase;
+  align-self: center;
+}
+
+.welcom-promo__action {
+  display: flex;
+  margin: 0;
+  text-transform: uppercase;
+  align-self: center;
+}
+
+.welcom-promo__action--wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+}
